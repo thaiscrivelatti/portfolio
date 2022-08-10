@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="content-wrapper">
+    <!--
+    <h1 class="title">{{title}}</h1>
+    <mat-divider> </mat-divider>
+    -->
+    <div class="about-container">
+      <div class="column-1">
+        <img src="assets/img/profile.jpg" alt="" class="avatar">
+      </div>
+
+      <div class="about">
+        <div class="resume">
+          <h1> {{data.name}} </h1>
+          <p> Desenvolvedora de software full-stack </p>
+          <div class="stack">
+            <span class="small" *ngFor="let item of data.mainStack, let i = index">
+              <span *ngIf="i > 0"> | </span>
+              {{item}}
+            </span>
+          </div>
+          <div class="social-links">
+            <fa-icon (click)="openLink(1)" [icon]="faLinkedin"></fa-icon>
+            <fa-icon (click)="openLink(2)" [icon]="faGithub"></fa-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+    <mat-divider> </mat-divider>
+  </div>
+</div>

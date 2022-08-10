@@ -100,8 +100,21 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "portfolio:build:production",
+            "firebaseProject": "thaiscrivelatti-c3407",
+            "firebaseHostingSite": "thaiscrivelatti"
+          }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

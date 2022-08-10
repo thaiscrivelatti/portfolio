@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  text-align: center;
+  margin: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+.projects-list {
+  margin: 40px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+.projects-list mat-card-subtitle {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.projects-list mat-card-content {
+  letter-spacing: 1px;
+}
+@media only screen and (max-width: 600px) {
+  .content-wrapper {
+    width: 90%;
+  }
+  .projects-list {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "thaiscrivelatti-c3407": {
+      "hosting": {
+        "portfolio": [
+          "thaiscrivelatti"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "thaiscrivelatti-c3407"
+  }
+}

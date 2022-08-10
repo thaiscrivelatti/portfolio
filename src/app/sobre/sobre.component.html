@@ -1,0 +1,52 @@
+<div class="container">
+  <div class="content-wrapper">
+    <!--
+    <h1 class="title">{{title}}</h1>
+    <mat-divider> </mat-divider>
+    -->
+    <div class="about-container">
+      <div class="about">
+        <p> {{data.description}} </p>
+
+        <div class="stack">
+          <span *ngFor="let item of data.mainStack, let i = index">
+            <span *ngIf="i > 0"> | </span>
+            {{item}}
+          </span>
+        </div>
+      </div>
+    </div>
+    <mat-divider> </mat-divider>
+
+    <div class="career-wrapper">
+      <div class="education-wrapper">
+        <h1 class="title">Educação</h1>
+        <mat-divider> </mat-divider>
+        <mat-list class="education">
+          <mat-list-item *ngFor="let education of data.education">
+            <fa-icon mat-list-icon [icon]="faGraduationCap"></fa-icon>
+            <div mat-line> {{ education.course }} </div>
+            <div mat-line> {{ education.institution }} </div>
+            <div mat-line> {{ education.type }} </div>
+          </mat-list-item>
+        </mat-list>
+      </div>
+
+
+      <div class="experience-wrapper">
+        <h1 class="title">Experiência</h1>
+        <mat-divider> </mat-divider>
+        <mat-list class="experience">
+            <mat-list-item *ngFor="let e of experience">
+                <fa-icon mat-list-icon [icon]="faBriefcase"></fa-icon>
+              <div mat-line> {{ e.name }} </div>
+              <div mat-line> {{ e.role }}</div>
+              <div mat-line class="attributions"> {{ e.attributions }}</div>
+              <div mat-line> {{ e.tools }}</div>
+            </mat-list-item>
+        </mat-list>
+      </div>
+
+    </div>
+  </div>
+</div>

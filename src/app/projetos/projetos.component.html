@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="content-wrapper">
+
+    <div class="projects-list">
+
+      <div *ngFor="let project of data">
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title> {{ project.title }} </mat-card-title>
+            <mat-card-subtitle> {{ project.stack }} </mat-card-subtitle>
+          </mat-card-header>
+          <img mat-card-image src="{{ project.image }}" alt="Foto de um projeto">
+          <mat-card-content>
+            <p>
+              {{ project.description }}
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <a mat-stroked-button color="primary" href="{{ project.link }}">VER PROJETO</a>
+            <a mat-stroked-button *ngIf="project.repository != null" href="{{ project.repository }}">REPOSITÓRIO</a>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>
