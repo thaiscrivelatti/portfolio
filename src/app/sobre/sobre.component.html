@@ -32,7 +32,7 @@
         <mat-list class="experience2">
           <mat-list-item *ngFor="let experience of data.experience">
             <fa-icon mat-list-icon [icon]="faBriefcase"></fa-icon>
-            <div mat-line> <a href="{{ experience.url }}"> {{ experience.name }} </a> </div>
+            <div mat-line> <a mat-button class="link" href="{{ experience.url }}"> {{ experience.name }} </a> </div>
             <div mat-line> {{ experience.duration }} </div>
             <div mat-line> {{ experience.role }} </div>
           </mat-list-item>
