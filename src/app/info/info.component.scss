@@ -9,3 +9,8 @@
 .content-wrapper{
   width: 70%;
 }
+@media only screen and (max-width: 600px) {
+  .container, .content-wrapper {
+    width: 100%;
+  }
+}

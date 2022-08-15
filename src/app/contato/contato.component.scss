@@ -1,11 +1,12 @@
 .content-wrapper {
+  width: 70%;
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .content-wrapper p {
-  width: 70%;
   margin: 40px 0;
   line-height: 1.5em;
 }
@@ -15,4 +16,10 @@
 .mat-button {
   padding: 0;
   font-size: 16px;
+}
+@media only screen and (max-width: 600px) {
+  .content-wrapper {
+    width: 98%;
+    text-align: center;
+  }
 }

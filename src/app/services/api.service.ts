@@ -9,34 +9,74 @@ export class ApiService {
   loadAbout() {
     return {
       name: "Thais Crivelatti",
-      description: "Olá, eu sou a Thais! Sou graduada em Análise e Desenvolvimento de Sistemas, Jogos Digitais e possuo especialização em Engenharia de Software. Estudo e trabalho com programação desde 2013. Considero-me uma desenvolvedora full-stack. Sempre fui autodidata e já mexi com diversas tecnologias diferentes, como HTML, CSS, Javascript, Angular, Typescript, Python,  C#, e até mesmo com linguagens legadas como Progress e Visual Fox Pro. Em meu tempo livre gosto de ler, assistir séries e fazer crochê.",
+      description: "Estudo e trabalho com programação desde 2013. Apesar das minhas experiências terem sido back-end, tenho estudado para desenvolver minhas habilidades no front-end e tornar-me desenvolvedora full-stack. Sou autodidata e possuo aprendizado rápido. Prezo muito pela escrita de código limpo, soluções simples e documentações detalhadas.",
       education: [
         {
-          course: "Análise e Desenvolvimento de Sistemas",
-          institution: "Univel",
+          course: "Jogos Digitais",
+          institution: "Centro Universitário FAG",
           type: "Graduação",
+          duration: "2019 - 2021",
         },
         {
           course: "Engenharia de Software",
           institution: "Univel",
           type: "Pós-graduação",
+          duration:"2017 - 2018",
         },
         {
-          course: "Jogos Digitais",
-          institution: "Centro Universitário FAG",
+          course: "Análise e Desenvolvimento de Sistemas",
+          institution: "Univel",
           type: "Graduação",
+          duration: "2014 - 2016",
         },
+        {
+          course: "Informática",
+          institution: "CEEP Pedro Boaretto Neto",
+          type: "Técnico subsequente",
+          duration: "2012 - 2013",
+        }
       ],
       mainStack: [
         "HTML5",
         "CSS3",
         "Javascript",
         "Angular",
-        "Python",
       ],
+      experience: [
+        {
+          name: "SetaDigital / Linx",
+          duration: "2017 - 2020",
+          role: "Desenvolvedora de sistemas",
+          url: "https://www.linx.com.br/seta-digital/"
+        },
+        {
+          name: "Datacoper Software",
+          duration: "2013 - 2015",
+          role: "Desenvolvedora de sistemas",
+          url: "https://www.datacoper.com.br/"
+        }
+      ]
     };
   }
 
+  loadTools() {
+    return [
+      "HTML5",
+      "CSS3",
+      "Javascript",
+      "Angular",
+      "Python",
+      "Java",
+      "C#",
+      "PHP",
+      "Visual Fox Pro",
+      "PostgreSQL",
+      "MySQL",
+      "SVN",
+      "Git",
+      "Wordpress"
+    ]
+  }
   loadProjects() {
     return [
       {
@@ -56,6 +96,14 @@ export class ApiService {
         image:"assets/img/genius.jpg",
       },
       {
+        title:"Jogo da memória",
+        description: "Jogo desenvolvido durante o bootcamp JavaScript Gamer Developer da DIO.",
+        stack: "HTML5, CSS3, Javascript",
+        link: "https://thaiscrivelatti.github.io/game-memory",
+        repository: "https://github.com/thrivelatti/game-memory",
+        image:"assets/img/memory.jpg",
+      },
+      {
         title:"Jogo da Velha",
         description: "Jogo desenvolvido durante o bootcamp JavaScript Gamer Developer da DIO.",
         stack: "HTML5, CSS3, Javascript",
@@ -63,31 +111,6 @@ export class ApiService {
         repository: "https://github.com/thrivelatti/game-tictactoe",
         image:"assets/img/tictactoe.jpg",
       },
-      {
-        title:"Jogo da Velha",
-        description: "Jogo desenvolvido durante o bootcamp JavaScript Gamer Developer da DIO.",
-        stack: "HTML5, CSS3, Javascript",
-        link: "https://thaiscrivelatti.github.io/game-tictactoe/",
-        repository: "https://github.com/thrivelatti/game-tictactoe",
-        image:"assets/img/tictactoe.jpg",
-      },
-    ];
-  }
-
-  loadExperience() {
-    return [
-      {
-        name: "Setadigital / Linx",
-        role: "Desenvolvedora de Software",
-        attributions: "Desenvolvimento de funcionalidades e manutenção em software ERP especializado em loja de calçados na linguagem Visual Fox Pro. Manutenção em banco de dados PostgreSQL. Desenvolvimento de funcionalidades para software secundário em C#.",
-        tools: "",
-      },
-      {
-        name: "Datacoper Software",
-        role: "Desenvolvedora de Software",
-        attributions: "Desenvolvimento de funcionalidades e manutenção de software ERP especializado no agronegócio em linguagem Progress.",
-        tools: "",
-      }
     ];
   }
 }

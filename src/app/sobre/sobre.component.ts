@@ -10,12 +10,13 @@ import { faGraduationCap, faBriefcase } from '@fortawesome/free-solid-svg-icons'
 export class SobreComponent {
   public title = "Sobre";
   public data: any;
+  public tools: any;
   public experience: any;
   faGraduationCap = faGraduationCap;
   faBriefcase = faBriefcase;
 
   constructor(private api: ApiService) {
     this.data = api.loadAbout();
-    this.experience = api.loadExperience();
+    this.tools = api.loadTools();
   }
 }
