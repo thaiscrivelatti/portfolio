@@ -88,6 +88,14 @@ export class ApiService {
         image:"assets/img/hacka.jpg",
       },
       {
+        title:"Super Hero Theming",
+        description: "Projeto simples para aprender o funcionamento da troca de tema no Angular.",
+        stack: "Angular, Typescript, Firebase",
+        link: "https://superhero-theme.web.app/",
+        repository: "https://github.com/thaiscrivelatti/superhero-angular-theming",
+        image:"assets/img/superherotheming.jpg",
+      },
+      {
         title:"Genius Game",
         description: "Game Genius desenvolvido durante o Bootcamp JavaScript Game Developer da DIO.",
         stack: "HTML5, CSS3, Javascript",
