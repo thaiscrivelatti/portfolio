@@ -5,9 +5,10 @@ import { faSun, faMoon, faCircleArrowUp, faG } from '@fortawesome/free-solid-svg
 
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.scss'],
+    standalone: false
 })
 export class AppComponent implements OnInit {
   title = 'Thais Crivelatti | Portfolio';

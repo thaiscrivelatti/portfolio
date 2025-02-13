@@ -4,9 +4,10 @@ import { faGraduationCap } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
-  selector: 'app-resumo',
-  templateUrl: './resumo.component.html',
-  styleUrls: ['./resumo.component.scss']
+    selector: 'app-resumo',
+    templateUrl: './resumo.component.html',
+    styleUrls: ['./resumo.component.scss'],
+    standalone: false
 })
 export class ResumoComponent {
   public title = "Thais Crivelatti | Portfolio";

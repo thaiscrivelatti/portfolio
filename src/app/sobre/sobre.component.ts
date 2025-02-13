@@ -3,9 +3,10 @@ import { ApiService } from '../services/api.service';
 import { faGraduationCap, faBriefcase } from '@fortawesome/free-solid-svg-icons'
 
 @Component({
-  selector: 'app-sobre',
-  templateUrl: './sobre.component.html',
-  styleUrls: ['./sobre.component.scss']
+    selector: 'app-sobre',
+    templateUrl: './sobre.component.html',
+    styleUrls: ['./sobre.component.scss'],
+    standalone: false
 })
 export class SobreComponent {
   public title = "Sobre";
